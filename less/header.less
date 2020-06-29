@@ -1,0 +1,272 @@
+.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 180px;
+	text-decoration: none;
+	color: #fff;
+
+	&:hover .logo-icon {
+	fill: #ccc;
+	}
+
+	&:hover .logo-text {
+	color: #ccc;
+	}
+
+	&:active .logo-icon {
+	fill: #fff;
+	}
+
+	&:active .logo-text {
+	color: #fff;
+	}
+
+	.logo-icon {
+	fill: CurrentColor;
+	}
+
+	.logo-text {
+	.text('raleway', 34px, 1.2, 400, normal);
+	letter-spacing: -0.04em;
+	}
+}
+
+.menu-btn,
+#menu-toggle{
+	display: none;
+}
+
+.header {
+	.flex();
+	width: 100%;
+	background-image: url('../img/bg_photo_11949.jpg');
+	.background();
+	background-color: rgba(17,17,17,0.7);
+	color: #fff;
+
+	&-top {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 370px 0 370px;
+		margin: 0 0 285px 0;
+		box-sizing: border-box;
+
+
+		&-wrap{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&-menu{
+			display: flex;
+			
+			&-list{
+				list-style-type: none;
+				display: flex;
+				padding: 0;
+				margin: 0;
+
+				& li{
+					margin: 0 30px 0 0;
+				}
+
+				&-link{
+					text-decoration: none;
+					.text('montserrat', 14px, 1.2, 300, normal);
+					color: #fff;
+					
+					&:hover{
+						color: #c7b299;
+					}
+					&:active{
+						color: #fff;
+					}
+				}
+			}
+		}
+		&-cart{
+			outline: none;
+			border: none;
+			background-color: transparent;
+			margin: 0 28px 0 30px;
+			padding: 0;
+
+			.cart-icon {
+				fill: #fff;
+
+				&:hover{
+				fill: #ccc;
+				}
+
+				&:active{
+					fill: #fff;
+				}
+			}
+		}
+		&-search{
+			width: 24px;
+			height: 24px;
+			position: relative;
+
+			.search-label{
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: transparent;
+
+				.search-label-icon{
+					fill: #fff;
+				}
+			}
+			&:active .search-label-icon{
+				fill: #ccc;
+			}
+
+			&:active .search-input{
+				display: none;
+			}
+
+			.search-input {
+				width: 0;
+				min-height: 0;
+				padding: 5px;
+				outline: none;
+				box-sizing: border-box;
+				background-color: transparent;
+				border: none;
+				position: absolute;
+				top: 40px;
+				left: -119px;
+				color: #fff;
+				font-size: 16px;
+				font-family: Arial;
+				text-transform: capitalize;
+
+				&:focus {
+					width: 150px;
+					min-height: 20px;
+					transition: width 1s ease;
+					border: 2px solid #fff;
+					display: block;
+				}
+			}
+		}
+	}
+
+	&-carusel{
+		.flex();
+		align-items: center;
+		width: 100%;
+
+		&-button{
+			outline: none;
+			border: none;
+			.block-size(57px, 57px);
+			opacity: 0.5;
+			border-top: 2px solid #fff;
+			border-right: 2px solid #fff;
+			background-color: transparent;
+			margin: 0;
+
+			&:first-of-type{
+				transform: rotate(225deg);
+			}
+
+			&:last-of-type{
+				transform: rotate(45deg);
+			}
+
+			&:hover{
+				border-top: 2px solid #ccc;
+				border-right: 2px solid #ccc;
+			}
+
+			&:active{
+				border-top: 2px solid #fff;
+				border-right: 2px solid #fff;
+			}
+		}
+
+		&-slogan{
+			width: @width/3;
+			margin: 0 375px 0 375px;
+			padding: 0;
+			box-sizing: border-box;
+
+			&-unique{
+				display: block;
+				.text('raleway', 36px, 1.2, 500, normal);
+				text-align: center;
+				padding: 0;
+				margin: 0 0 2px 0;
+				box-sizing: border-box;
+			}
+
+			&-portfolio{
+				display: block;
+				.text('raleway', 52px, 1.2, 800, normal);
+				text-align: center;
+				margin: 0 0 10px 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			&-text{
+				.text('montserrat', 16px, 24px, 300, normal);
+				text-align: center;
+				padding: 0;
+				margin: 0 0 45px 0;
+				box-sizing: border-box;
+			}
+
+			&-button {
+				.block-size(170px, 53px);
+				margin: 0 auto;
+				.button();
+
+				&:hover {
+					background-color: #998675;
+					opacity: 0.5;
+					border: 1px solid #fff;
+				}
+
+				&:active {
+					background-color: #998675;
+					opacity: 1;
+					border: 1px solid #fff;
+				}
+
+				& span {
+					.text('raleway', 14px, 23px, 800, normal);
+					padding: 0;
+				}
+			}
+		}
+		&-pagination {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin: 325px auto 40px auto;
+			padding: 0;
+
+			&-item {
+				display: block;
+				width: 11px;
+				height: 11px;
+				margin: 0 5px;
+				border: 2px solid transparent;
+				border-radius: 50%;
+				opacity: 0.5;
+				background-color: #fff;
+
+				&:hover{
+					background-color: transparent;
+					border: 2px solid #fff;
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,179 @@
+@media (max-width: 576px) {
+
+	.container{
+	width: 100%;
+	}
+	
+	.header{
+		position: fixed;
+		top: 0;
+		z-index: 99;
+
+		&-top{
+			padding: 30px;
+			margin: 0;
+
+
+			&-cart, &-search {
+				display: none;
+			}
+		}
+	}
+
+	#menu-toggle:checked ~ .menu-btn > span {
+		transform: rotate(45deg);
+	}
+	#menu-toggle:checked ~ .menu-btn > span::before {
+		top: 0;
+		transform: rotate(0);
+	}
+	#menu-toggle:checked ~ .menu-btn > span::after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+	#menu-toggle:checked ~ .header-top-menu-list {
+		visibility: visible;
+		height: auto;
+	}
+
+	.menu-btn {
+		display: flex;
+		align-items: center;
+		position: fixed;
+		top: 30px;
+		right: 30px;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		z-index: 101;
+	}
+
+	.menu-btn > span,
+	.menu-btn > span::before,
+	.menu-btn > span::after {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		transition-duration: .25s;
+	}
+
+	.menu-btn > span::before {
+		content: '';
+		top: -15px;
+	}
+	.menu-btn > span::after {
+		content: '';
+		top: 15px;
+	}
+
+	.header-top-menu-list {
+		display: block;
+		position: fixed;
+		visibility: hidden;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 0;
+		margin: 0;
+		padding: 30px 0;
+		text-align: center;
+		list-style: none;
+		background-color: rgba(17,17,17,0.9);
+		transition-duration: .25s;
+		z-index: 100;
+
+			&-link {
+			display: block;
+			padding: 10px 0 10px 25px;
+			transition-duration: .25s;
+			font-size: 20px;
+		}
+	}
+
+	.header-carusel, .multi-photo, .ad,.video, .mobile, .counters, .footer{
+		display: none;
+	}
+
+
+	.services{
+			margin: 120px 0 0 0;
+			
+			&-features{
+			padding: 20px;
+			margin: 0;
+
+			&:last-child{
+				margin: 0;
+			}
+		}
+	}
+
+	.projects{
+		padding: 30px 0 30px 0;
+
+		&-text{
+			padding: 0 30px 0 30px;
+		}
+
+		&-category{
+			margin: 0 10px 10px 0;
+			max-width: 100px;
+
+			&:last-child{
+				margin: 0 0 10px 0;
+			}
+		}
+
+		&-items-wrap{
+			padding:0;
+			justify-content: center;
+		}
+	}
+
+	.posts{
+		padding: 30px 0 30px 0;
+
+		&-text{
+			padding: 0 30px 0 30px;
+		}
+
+		&-wrap{
+			padding:0;
+			justify-content: center;
+		}
+
+		&-item{
+			margin: 0 0 30px 0;
+		}
+	}
+
+	.partners{
+		padding: 15px;
+		justify-content: center;
+
+		&-link{
+			margin: 0 30px 0 0;
+			width: 15%;
+			
+			&:last-child{
+				margin: 0;
+			};
+
+			&-photo{
+				width: 100%;
+			}
+		}
+	}
+
+	.copyright{
+		padding: 30px;
+		justify-content: center;
+
+		&-link{
+			margin: 0 0 20px 0;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.flex() {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.text(@family, @size, @height, @weight, @style) {
+	font-family: @family, 'Arial', sans-serif;
+	font-size: @size;
+	line-height: @height;
+	font-weight: @weight;
+	font-style: @style;
+}
+
+.block-size(@width, @height){
+	width: @width;
+	height: @height;
+}
+
+.background(){
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button(){
+		display: block;
+		background-color: #998675;
+		border-radius: 3.0px;
+		border: 1px solid transparent;
+		outline: none;
+		text-transform: uppercase;
+		color: #fff;
+		box-sizing: border-box;
+}
+
+.title(){
+	.text('raleway', 30px, 1.2, 600, normal);
+	display: block;
+	width: 100%;
+	margin: 0 auto 15px auto;
+	text-align: center;
+	color: #555555;
+	box-sizing: border-box;
+}
+
+.section-text(){
+	.text('montserrat', 16px, 28px, 300, normal);
+	width: 100%;
+	text-align: center;
+	color: #8c8c8c;
+
+}

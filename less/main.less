@@ -1,0 +1,749 @@
+.services{
+	.flex();
+	align-items: center;
+	width: 100%;
+
+	&-features{
+		.flex();
+		align-items: center;
+		width: 270px;
+		margin: 80px 30px 80px 0;
+		box-sizing: border-box;
+
+		&:last-child{
+			margin: 80px 0 80px 0;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			width: 70px;
+			height: 3px;
+			background-color: #f1eee9;
+		}
+
+		&:hover &-icon {
+			fill: #c7b299;
+		} 
+
+		&:hover &-title{
+			color: #c7b299;
+		}
+
+		&:hover:after {
+			background-color: #c7b299;
+		}
+
+		&-icon {
+			display: block;
+			fill: #555555;
+			margin: 0 0 25px 0;
+		}
+
+		&-title {
+			width: 100%;
+			margin: 0 0 15px 0;
+			.text('montserrat', 22px, 1.2, 600, normal);
+			text-align: center;
+			color: #555555;
+		}
+
+		&-text {
+			.text('montserrat', 14px, 24px, 300, normal);
+			width: 100%;
+			text-align: center;
+			color: #8c8c8c;
+			padding: 0;
+			margin: 0 0 30px 0;
+		}
+	}
+}
+
+.multi-photo{
+	width: 100%;
+	.flex();
+	background-color: #fbfaf8;
+	position: relative;
+	padding: 80px 0 0 0;
+	min-height: 700px;
+	box-sizing: border-box;
+
+	&-title{
+		.title();
+	}
+
+	&-text{
+		.section-text();
+		padding: 0 580px 0 580px;
+		margin: 0 0 30px 0;
+		box-sizing: border-box;
+	}
+
+	&-img-left{
+	position: absolute;
+	top: 300px;
+	left: 344px;
+	z-index: 2;
+
+		&:hover{
+			z-index: 4;
+		}
+	}
+
+	&-img {
+	display: block;
+	z-index: 3;
+	align-self: flex-end;
+	}
+
+	&-img-right {
+	position: absolute;
+	top: 300px;
+	right: 344px;
+	z-index: 1;
+
+			&:hover{
+			z-index: 5;
+		}
+	}
+}
+
+.ad{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 48px 370px 48px 370px;
+	box-sizing: border-box;
+	background-color: #f4f5f8;
+	background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+
+	&-title{
+		.text('raleway', 28px, 1.2, 400, normal);
+		color: #fff;
+
+		&-name{
+		color: #c7b299;
+		}
+	}
+	&-text{
+		.text('montserrat', 18px, 1.2, 300, normal);
+		color: #615855;
+		padding: 0;
+		margin: 0;
+	}
+
+	&-button{
+		.block-size(170px, 50px);
+		.button();
+
+		&:hover {
+		background-color: #998675;
+		opacity: 0.5;
+		border: 1px solid #fff;
+		}
+
+		&:active {
+		background-color: #998675;
+		opacity: 1;
+		border: 1px solid #fff;
+		}
+
+		& span {
+		.text('raleway', 14px, 23px, 800, normal);
+		padding: 0;
+		}
+	}
+}
+
+.projects{
+	.flex();
+	align-items: center;
+	padding: 80px 0 80px 0;
+	box-sizing: border-box;
+	width: 100%;
+
+	&-title {
+		.title();
+	}
+
+	&-text{
+		.section-text();
+		padding: 0 580px 0 580px;
+		margin: 0 0 30px 0;
+		box-sizing: border-box;
+	}
+
+	&-wrap{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&-category{
+		display: block;
+		background-color: transparent;
+		outline: none;
+		text-transform: capitalize;
+		color: #8c8c8c;
+		box-sizing: border-box;
+		.block-size(120px, 32px);
+		border: 1.0px solid #ebebeb;
+		border-radius: 3.0px;
+		margin: 0 10px 40px 0;
+		.text('montserrat', 14px, 21px, 300, normal);
+
+
+		&:first-child {
+			.block-size(70px, 32px);
+		}
+
+		&:last-child{
+			margin: 0 0 40px 0;
+		}
+
+		&:hover {
+		background-color: #998675;
+		opacity: 0.5;
+		border: 1px solid #998675;
+		color: #fff;
+		}
+
+		&:active {
+		background-color: #998675;
+		opacity: 1;
+		border: 1px solid #998675;
+		color: #fff;
+		}
+	}
+
+	&-items-wrap{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0 375px;
+		box-sizing: border-box;
+	}
+
+	&-item{
+		width: 370px;
+		position: relative;
+		margin: 0 0 30px 0;
+
+		&:hover &-btn-link{
+			display: block;
+			opacity: 0.5;
+			fill: #c7b299;
+		}
+		&:hover &-btn-search{
+			display: block;
+			opacity: 0.5;
+			fill: #fff;
+		}
+
+		&:hover &-btn-link:hover{
+			display: block;
+			opacity: 1;
+			fill: #c7b299;
+		}
+		&:hover &-btn-search:hover{
+			display: block;
+			opacity: 1;
+			fill: #fff;
+		}
+
+		&:hover &-btn-link:active{
+			display: block;
+			opacity: 1;
+			fill: #c7b299;
+			transform: scale(1.2);
+		}
+		&:hover &-btn-search:active{
+			display: block;
+			opacity: 1;
+			fill: #fff;
+			transform: scale(1.2);
+		}
+
+		&:hover &-photo{
+			filter: brightness(40%);
+		}
+		&:hover &-wrap {
+			background-color: #362f2d;
+		}
+
+		&:hover &-wrap:before {
+			border-bottom: 10px solid #362f2d;
+		}
+
+		&-photo{
+			display: block;
+		}
+
+		&-wrap{
+			padding: 30px;
+			box-sizing: border-box;
+			background-color: #fbfaf8;
+			position: relative;
+
+			&:before {
+				content: "";
+				border: 10px solid transparent; 
+				border-bottom: 10px solid #fbfaf8;
+				position: absolute;
+				top: -20px;
+			}
+		}
+		&-title{
+			display: block;
+			text-align: left;
+			margin: 0 0 10px 0;
+			.text('raleway', 20px, 1.2, 500, normal);
+			color: #d1d1d1;
+		}
+
+		&-text{
+			text-align: left;
+			.text('montserrat', 14px, 20px, 300, normal);
+			color: #c7b299;
+		}
+
+		&-btn-link, &-btn-search{
+			display: none;
+			border: none;
+			outline: none;
+			background-color: transparent;
+			position: absolute;
+			top: 30%;
+		}
+
+		&-btn-link{
+			left: 37%;
+		}
+
+		 &-btn-search{
+		 	right: 37%;
+		}
+	}
+
+	&-button{
+		.block-size(170px, 50px);
+		.button();
+		margin: 10px auto 0 auto;
+
+		&:hover {
+		background-color: #998675;
+		opacity: 0.5;
+		border: 1px solid #fff;
+		}
+
+		&:active {
+		background-color: #998675;
+		opacity: 1;
+		border: 1px solid #fff;
+		}
+
+		& span {
+		.text('raleway', 14px, 23px, 800, normal);
+		padding: 0;
+		}
+	}
+}
+
+.video{
+	width: 100%;
+	position: relative;
+	.flex();
+
+	&-file{
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&-wrap{
+		position: absolute;
+		top: 30%;
+		left: 35%;
+		width: 30%;
+	}
+
+	&-button {
+	display: flex;
+	margin: 0 auto 40px auto;
+	width: 100px;
+	height: 100px;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.2);
+
+		&-icon {
+		margin: auto;
+		fill: #fff;
+		filter: brightness(60%);
+		}
+
+		&:hover &-icon {
+		filter: brightness(100%);
+
+		}
+
+		&:active {
+		background-color: rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	&-title{
+		.text('raleway', 30px, 1.2, 500, normal);
+		color: #fff;
+		display: block;
+		text-align: center;
+	}
+
+	&-text{
+		.text('montserrat', 16px, 28px, 300, normal);
+		color: #fff;
+		text-align: center;
+		margin: 20px 0 30px 0;
+	}
+
+	&-time{
+		.text('montserrat', 14px, 24px, 400, normal);
+		color: #c7b299;
+		display: block;
+		text-align: center;
+	}
+}
+.video-button--hide {
+	display: none;
+}
+
+.mobile{
+	width: 100%;
+	background-image: url('../img/iphone_in_hand_10962.png');
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: 20% bottom;
+	background-color: #fbfaf8;
+	padding: 190px 0 180px 45%;
+	box-sizing: border-box;
+
+	&-wrap{
+		width: 660px;
+
+	}
+
+	&-title{
+		.text('raleway', 30px, 1.2, 600, normal);
+		color: #555555;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0 0 35px 0;
+		box-sizing: border-box;
+	}
+
+	&-text{
+		.text('montserrat', 16px, 28px, 300, normal);
+		color: #8c8c8c;
+		text-align: justify;
+		width: 100%;
+		margin: 0 0 35px 0;
+		box-sizing: border-box;
+	}
+
+	&-list{
+		.text('montserrat', 16px, 32px, 300, normal);
+		margin: 0 0 0 100px;
+		padding: 0;
+		color: #8c8c8c;
+		box-sizing: border-box;
+
+		&-item{
+			list-style-type: none;
+			position: relative;
+
+			&:before{
+				content: "\276F";
+				display: block;
+				.block-size(21px, 21px);
+				border-radius: 50%;
+				background-color: #c7b299;
+				text-align: center;
+				line-height: 21px;
+				color: #fff;
+				position: absolute;
+				top: 5px;
+				left: -50px;
+			}
+		}
+	}
+}
+
+.counters{
+	width: 100%;
+	.flex();
+	align-items: center;
+	background-color: #f4f5f8;
+	background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+
+	&-item{
+		.flex();
+		align-items: center;
+		margin: 70px 105px 60px 0;
+		box-sizing: border-box;
+		width: 115px;
+
+		&:last-child{
+			margin: 70px 0 60px 0;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 2px;
+			background-color: #fff;
+		}
+
+		&:hover &-icon, &:hover &-number, &:hover &-text, &:hover:after {
+			transform: scale(1.1);
+		} 
+
+		&-icon {
+			display: block;
+			fill: #c7b299;
+			margin: 0 0 25px 0;
+			box-sizing: border-box;
+		}
+
+		&-number {
+			width: 100%;
+			margin: 0 0 15px 0;
+			.text('montserrat', 48px, 36px, 200, normal);
+			text-align: center;
+			color: #fff;
+			display: block;
+			box-sizing: border-box;
+		}
+
+		&-text {
+			.text('montserrat', 14px, 20px, 300, normal);
+			width: 100%;
+			text-align: center;
+			color: #c7b299;
+			padding: 0;
+			margin: 0 0 30px 0;
+			display: block;
+			box-sizing: border-box;
+		}
+	}
+}
+
+.posts{
+	.flex();
+	align-items: center;
+	padding: 80px 0 80px 0;
+	box-sizing: border-box;
+	width: 100%;
+
+
+	&-title {
+		.title();
+	}
+
+	&-text{
+		.section-text();
+		padding: 0 580px 0 580px;
+		margin: 0 0 30px 0;
+		box-sizing: border-box;
+	}
+
+	&-wrap{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0 375px;
+		margin: 0 0 60px 0;
+		box-sizing: border-box;
+	}
+
+	&-item{
+		width: 370px;
+		position: relative;
+		
+		&:hover &-wrap{
+			background-color: #362f2d;
+			border: 1.0px solid #362f2d;
+		}
+
+		&:hover &-title, &:hover &-link{
+			color: #c7b299;
+		}
+
+		&:hover &-text{
+			color: #fff;
+		}
+
+		&:hover &-photo {
+			filter: brightness(50%);
+		}
+
+		&:hover &-data-day{
+			background-color: #c7b299;
+		}
+
+		&:hover &-data-month{
+			background-color: #a48d72;
+		}
+
+		&:hover &-link:hover{
+			opacity: 0.5;
+			color: #fff;
+		}
+
+		&:hover &-link:active{
+			opacity: 1;
+			color: #fff;
+		}
+
+		&-photo{
+			display: block;
+		}
+
+		&-wrap{
+			padding: 30px;
+			box-sizing: border-box;
+			border: 1.0px solid #f8f8f8;
+		}
+
+		&-title{
+			display: block;
+			text-align: left;
+			margin: 0 0 10px 0;
+			.text('raleway', 20px, 1.2, 500, normal);
+			color: #555555;
+		}
+
+		&-text{
+			text-align: left;
+			.text('montserrat', 14px, 22px, 300, normal);
+			color: #8c8c8c;
+		}
+		
+		&-link{
+			text-decoration: none;
+			.text('montserrat', 14px, 20px, 300, normal);
+			color: #c7b299;
+			position: relative;
+
+			&:after{
+				content: "\1F892";
+				display: block;
+				position: absolute;
+				font-size: 25px;
+				top: -2px;
+				left: 80px;
+			}
+		}
+		
+		&-data-wrap{
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: 50px;
+		}
+
+		&-data-day{
+			display: block;
+			width: 100%;
+			text-align: center;
+			.text('montserrat', 24px, 20px, 300, normal);
+			color: #fff;
+			background-color: #363636;
+			border-radius: 3.0px 3.0px 0.0px 0.0px;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		&-data-month{
+			display: block;
+			width: 100%;
+			text-align: center;
+			.text('roboto', 12px, 20px, 400, normal);
+			color: #fff;
+			background-color: #252525;
+			border-radius: 0.0px 0.0px 3.0px 3.0px;
+			padding: 5px;
+			box-sizing: border-box;
+		}
+	}
+
+	&-button{
+		outline: none;
+		background-color: transparent;
+		border: none;
+		position: relative;
+
+		&:before{
+			display: block;
+			.block-size(22px, 22px);
+			border-radius: 50%;
+			border: 1px solid #d1d1d1;
+			background-color: transparent;
+			text-align: center;
+			line-height: 22px;
+			color: #d1d1d1;
+			position: absolute;
+			top: -24px;
+		}
+
+		&:hover::before{
+			border: 1px solid #c7b299;
+			color: #c7b299;
+		}
+
+		&:first-of-type:before{
+			content: "\276E";
+			right: 5px;
+		}
+
+		&:last-of-type:before{
+			content: "\276F";
+			left: 5px;
+		}
+	}
+}
+
+.partners{
+	width: 100%;
+	.flex();
+	align-items: center;
+	background-image: url('../img/bg_photo_11122.jpg');
+	.background();
+	background-color: rgba(17,17,17,0.7);
+	padding: 140px 0 134px 0;
+	box-sizing: border-box;
+
+		&-link{
+		display: block;
+		margin: 0 90px 0 0;
+		padding: 0;
+		box-sizing: border-box;
+
+		&:last-child{
+			margin: 0;
+		}
+
+		&:hover{
+			filter: brightness(50%);
+		}
+
+		&:active{
+			filter: brightness(100%);
+			transform: scale(1.1);
+		}
+	}
+}
